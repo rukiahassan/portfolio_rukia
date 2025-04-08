@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rukia hassan - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Rukia Hassan</h1>
+        <p>Software  Developer </p>
+
+        <!-- Using CSS -->
+        <img src="IMG_0014a.jpg" alt="IMG_0014a.jpg" width="800" height="500">
+
+
+    </header>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #282c34;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        header h1 {
+            font-size: 2.5rem;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #61dafb;
+        }
+        section {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #about h2, #projects h2, #contact h2 {
+            color: #282c34;
+            margin-bottom: 1rem;
+        }
+        .project {
+            background: white;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        #contact a {
+            color: #61dafb;
+            text-decoration: none;
+        }
+        #contact a:hover {
+            text-decoration: underline;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+          <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>LET ME INTRODUCE MYSELF
+            Hi, I'm Rukia Hassan, a Software Developer , Community leader and AI/ML enthusiast dedicated to building smart, scalable, and impactful solutions. With a strong background in Python, JavaScript, and AI frameworks like TensorFlow, I specialize in developing data-driven applications and automating complex processes.
+
+I have a keen interest in problem-solving, optimizing algorithms, and ensuring seamless user experiences. Beyond coding, I contribute to open-source projects and mentor aspiring developers.
+
+When I’m not immersed in technology, you’ll find me exploring AI advancements, writing technical blogs, or brainstorming innovative ideas. Let’s connect and create something amazing together!"
+
+📩 Let’s connect: [LinkedIn/GitHub/Email]
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Project 1</h3>
+                <p>A cool thing I built using [tools]. It does [purpose].</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 2</h3>
+                <p>A fun experiment with [tools]. Achieved [result].</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Project 3</h3>
+                <p>My favorite work using [tools]. Check it out!</p>
+                <a href="https://github.com/rukiahassan/cleaner_script.git">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email me at: <a href="rukiahassan1920@gmail.com">rukiahassan1920@gmail.com</a></p>
+        <p>Find me on: <a href="www.linkedin.com/in/rukia-hassan-810564223">LinkedIn</a> | <a href="https://github.com/rukiahassan/data.git">GitHub</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rukia Hassan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+<script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const section = document.querySelector(this.getAttribute('href'));
+            section.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+</script>
+</body>
+</html>
